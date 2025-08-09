@@ -15,6 +15,28 @@
         grid-template-columns: auto;
     }
 
+    .menu-lateral {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+        align-content: safe center;
+        text-align: start;
+        font-size: large;
+    }
+  
+    .nav {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .manu-lateral:hover .nav{
+        display: block;
+    }
+
     .productos {
         display: grid;
         grid-template-areas:'vino'
@@ -61,6 +83,22 @@
         grid-template-rows: 7% auto 7%;
         grid-template-columns: 20% 80%;
         
+    }
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-content: safe center;
+        text-align: start;
+        font-size: large;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 10px;
     }
 
     .productos {
@@ -129,6 +167,7 @@ i{
         transform: rotate(-90deg);
     }
 }
+
 .aside {
     grid-area: aside;
     color: #8A682E;
@@ -136,26 +175,11 @@ i{
     background-color: rgb(208, 220, 216);
 }
 
-.menu-lateral {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    align-content: safe center;
-    text-align: start;
-    font-size: large;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
 .nav-link {
     margin: 2px;
     color: rgb(113, 122, 148);
     text-decoration: none;
+    display: block;
     background: 0 0;
     border: 0;
     transition: color .15s ease-in-out, background-color .15s ease-in-out;
