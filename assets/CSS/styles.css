@@ -43,6 +43,12 @@
         display: block;
     }
 
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media (min-width: 885px) {
@@ -88,6 +94,11 @@
         justify-content: space-evenly;
     }
     
+    .contactos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }
 
 .header {
@@ -193,7 +204,7 @@ i{
 }
 
 .footer {
-    height: 42px;
+    height: 60px;
     padding: 5px;
     grid-area: footer;
     border-top: solid 2px #9fcae84f;
@@ -207,11 +218,6 @@ i{
 .contenedor-footer{
     display: flex;
     flex-direction: column;
-}
-
-.contactos {
-    display: flex;
-    justify-content: space-evenly ;
 }
 
 .footer h3{
